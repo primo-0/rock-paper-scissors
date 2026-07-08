@@ -42,6 +42,13 @@
       playGame ('scissors');
     });
 
+
+    document.body.addEventListener('keydown', (event) => {
+      if (event.key === 'r') {
+        playGame('rock');
+      }
+    });
+
     function playGame (playerMove)
      {
       const computerMove = pickComputerMove();
